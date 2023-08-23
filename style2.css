@@ -180,12 +180,12 @@ main {
   margin-bottom: 10px;
 }
 .instagram-box:nth-child(odd) {
-  margin: 0 10px 10px 0; 
+  margin: 0 10px 10px 0;
 }
 
 .instagram-box:nth-child(1) {
   background-image: url(img/airport.jpg);
-} 
+}
 
 .instagram-box:nth-child(2) {
   background-image: url(img/japan.jpg);
@@ -215,4 +215,73 @@ footer {
 
 .footer-text {
   color: #fff;
+}
+
+@media screen and (max-width: 425px) {
+
+  header {
+    width :100%;
+  }
+  .social i {
+    display: none;
+  }
+
+  .nav-list {
+    width :100%;
+  }
+  .nav-list-item {
+  width :100%;
+  display: block;
+  margin-top: 10px;
+  }
+
+  .main-visual-content {
+  width: 100%;
+ }
+ main {
+   width: 100%;
+  display :block;
+}
+.blog {
+  width : 100%;
+  margin-right: 0;
+}
+.category {
+  display: none;
+}
+.sidebar {
+  width: 100%;
+}
+
+.sidebar-contents {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.blog-box {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+/*saidobar-contentsとblog-boxでパディングを2％,3%に指定しておくことで、画像の幅をパーセンテージで指定した時にちょうど50％になるように調整できる*/
+.blog-image {
+  width: 49%;
+}
+
+/*イメージの高さは既に指定しているため、幅をパーセンテージで指定。*/
+.blog-text {
+  width :49%;
+  padding-top: 5px;
+}
+.instagram-box {
+  width :48%;
+  padding-top: 48%;
+}
+/*画像表示領域のwidthを指定し、高さをpadding-topを使ってパーセンテージ指定することで背景画像を正方形で表示ができる*/
+
+.instagram-box:nth-child(odd) {
+  margin-right: 4%;
+}
+.pagenation {
+  margin-bottom: 50px;
+}
 }
